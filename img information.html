@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		body{
+			margin: 0;
+			padding: 0;
+			font-family: sans-serif;
+			background-color: red;
+		}
+		.propar{
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%,-50%);
+			width: 1000px;
+			padding: 20px;
+			height: 360px;
+			box-sizing: border-box;
+			background: white;
+			border-radius: 4px;
+			box-shadow: 0 5px 15px rgba(0,0,0,.5);
+			display: flex;
+			transition: .5;
+		}
+		.propar:hover
+		{
+			box-shadow:  0 15px 30px rgba(0,0,0,.5);
+		}
+		.propar .imgBx{
+			width: 150px;
+			flex:0 0 150px;
+		}
+		.propar .imgBx img{
+			width: 400px;
+			height:250px;
+		}
+		.propar .content{
+			padding-left: 20px;
+		}
+		.propar .content h2{
+			margin: 0;
+			padding-left: 0;
+			color: pink;
+			font-size: 22px;  	
+		}
+		.propar .content p{
+			margin: 0;
+			padding:10px 0 0; 
+			text-align: justify;
+		}
+		@media (max-width: 500px;){
+			.propar  .content p{
+				width: 25px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<div class="propar">
+		<div class="imgBx">
+			<img src="img/300.jpg">		
+		</div>
+		<div class="content">
+			<h2>A Reuters article reported </h2>
+			<p>that a 100-year-old bridge in North Dakota collapsed from the weight of a 42-ton truckload of beans. The tractor trailer was overloaded, leading to the collapse of the 56-foot wooden bridge. Other bridges may face similar dangers.Many older bridges in the United States were not built to withstand heavy loads of current-day traffic. Photo by Randy R / Shutterstock
+			According to Reuters, the Grand Forks County Sheriff’s Office called in the incident and said that while the truck had made it across the Goose River bridge, it had become stuck due to the bridge collapse. The driver was uninjured, though police issued him an $11,400 citation for exceeding his load limit, which was reportedly triple the amount the bridge could have supported. Unfortunately, many historic bridges across the United States could suffer similar fates due to their tonnage limits and less advanced designs.</p>
+		</div>
+	</div>
+
+</body>
+</html>
